@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>我所理解的平均律</title>
+  </head>
+  <style type="text/css">
+body { background: #F6F6F6; }
+.yblogcnt { background: white; border: 1px solid #C0C0BF; border-radius: 6px; padding: 5px; color: #666; font-family: Arial, MingLiU, PMingLiU; font-size: 13px; }
+.yblogcnt .blgtitlebar h2 { font-size: 16px; font-weight: bold; }
+.yblogcnt .blgfolderbar .folder { float: left; }
+.yblogcnt .blgfolderbar .date { text-align: left; }
+.yblogcnt .msgcontent { padding: 15px 0px; }
+.yblogcnt .msgcontent img[src*=\.\.\/\.\.\/images\/] { max-width: 500px; }
+.yblogcnt .cmntbd { border-top: 1px dotted #C0C0BF; margin-top: 20px; }
+.yblogcnt .cmntbd .yvstrcmnt { padding: 10px 5px 5px; }
+.yblogcnt .cmntbd .ycmntreply { padding: 5px; }
+.yblogcnt .yvstrcmnthd cite { font-style: normal; }
+.yblogcnt .yvstrcmntbd { margin-left: 45px; }
+.yblogcnt .yvstrcmntbd .ycmntreply { border: 1px solid #CCC; }
+  </style>
+  <body>
+    <div class="yblogcnt" id="bigcontainer">
+      <div class="blgtitlebar">
+        <h2><span>我所理解的平均律</span></h2>
+      </div>
+      <div class="blgfolderbar">
+        <div class="date">文章日期：2011-04-30 11:08</div>
+      </div>
+      <div class="msgcontent">
+<p>這陣子在閑雅書法論壇和同好有些關於音樂的討論。</p>
+<p>我忍不住把這段文字貼上來，這是將二十年前自習樂理的筆記和計算整理後的結果：</p>
+<p><span style="COLOR:#008000;">我所理解的平均律</span></p>
+<p>畢達哥拉斯（2500年以前）由移動琴弦支柱改變弦長得知，1：2，2：3 和 3：4 這樣的弦長比率（也就是聲音振動頻率比），產生的兩個聲音同時發聲時聽起來是和諧的；分子分母數字越大，也就是頻率比不是非常簡單的整數比，聽起來就不和諧...<br>現在知道<br>1：2是所謂八度（就是「一點c」和「二點c」間的音程）<br>2：3是所謂五度 （do 和 sol 間的音程）<br>3：4是所謂四度（do 和 fa間，以及 sol 和do 間的音程 ）<br>這很美：do 振動頻率乘上 3/2 （1.5倍）變成 sol<br>sol 振動頻率再乘上 4/3 變成 do 的兩倍，就是高八度的 do<br><br>所謂五度音程，間隔的是 全+全+半+全，相當7個半音<br>八度音程間隔的是 全+全+半+全+全+全+半，相當12個半音，<span style="COLOR:#bf0000;">6個全音</span>。<br>每個半音/全音的頻率差距應該是多少？因為頻率倍增（幾何級數）只換得音程增加八度（算數級數），其中必然經過對數轉換。最簡單的算法是，<br>常數 * log (頻率B（較高）/頻率A（較低）) = 兩音之間包含的全/半音數目<br>如果用 常數 * log (2) = 6 來算 （就是頻率倍增=八度音程---跨過6個全音的意思）<br>此常數=6/log2。<br>用這個常數來計算，可以求得以下數字：<br>八度 （頻率比 2/1）包含 6 個全音 <br>完全五度 （頻率比 3/2）包含 3.5098個全音<br>完全四度 （頻率比 4/3）包含 2.4902個全音<br>大三度 （頻率比 5/4）包含 1.9316個全音<br>小三度 （頻率比 6/5）包含 1.5782個全音<br>大六度 （頻率比 5/3）包含 4.4218個全音<br>小六度 （頻率比 8/5）包含 4.0684個全音<br>不協和音程<br>大二度 （頻率比 9/8）包含 1.0195個全音<br>小二度 （頻率比 16/15）包含 0.5587個全音<br>依此求得「純正調」，即依照簡單頻率比的聲音組成，所以能得到純正和聲的音階<br>do 0 + 1.02 = re 1.02 大二度<br>re 1.02 + 0.91 = me 1.93 大三度<br>me 1.93 + 0.56 = fa 2.49 完全四度 <br>fa 2.49 + 1.02 = sol 3.51 完全五度 <br>sol 3.51 + 0.91 = la 4.42 大六度<br>la 4.42 + 1.02 大二度 = si 5.44<br>si 5.44 + 0.56 小二度 = do 6<br>（從la到do，頻率是大六度 8/5 乘以 大二度 9/8 再乘以 小二度 16/15，答案是 2！很美...）<br>可是，純正調也有很不美的地方：<br>一來是在豎琴或鍵盤樂器上，依照純正調調音，比如說，根據C大調，樂曲一旦移調就會變得不和諧，想像中移得越遠，效果就越不理想。<br>二來是，理論上，由任一個音比如說do，向上提高五度，連續12次，可以在經過所有12個半音後回到原來的那個音（當然，高了7個八度）。但是從純正調的完全五度=3.51的全音來看會知道，這樣一路變化下去，尾巴的小數會越來越大（重複12次，會產生超過0.1個全音的音差），結果是會回不去的...<br>所以產生了平均律這樣的妥協方案：<br>do 0 + 1 = re 1 <br>re 1 + 1 = me 2<br>me 2 + 0.5 = fa 2.5 <br>fa 2.5 + 1 = sol 3.5 <br>sol 3.5 + 1 = la 4.5 <br>la 4.5 + 1 = si 5.5<br>si 5.5 + 0.5 = do 6<br>所以，在平均律中，即使是 do 和 sol 也不是完全和諧的，因為此兩音的振動頻率比不是完美的完全五度比率 3/2=1.5，而是1.498307...。<br>10^(3.5/(6/log2))=1.498307...<br>10^(3.509775..../(6/log2))=1.5<br>平均律可說所有的調子都不完美，有的會比其他的更不和諧些，但總算是可以接受的妥協方案。</p>
+      </div>
+      <div class="cmntbd">
+                <div class="yvstrcmnt">
+                  <div class="yvstrcmnthd">
+                    <div class="cmntusrinfo">
+                      <a href="http://tw.myblog.yahoo.com/jw!Hf2KkWyfGRZDHrFm7KA1Ow--">Moon</a> 於 <cite>2011-05-04 09:36:30</cite> 回應 
+                    </div>
+                  </div>
+                  <div class="yvstrcmntbd">
+                    <p><span class="private_mesg"><p>孟醫師您好！不好意思，在您分享音樂的文章裡要請教您一些醫療問題！</p>
+<p>我是〝仲維〞媽媽，仲維之前在中國復健斜頸有一段時間，也在您幾次的診斷後確認畢業了！返家後我仍有持續觀察仲維的狀況，現在會習慣往患部轉動，反而不喜歡往另一方轉，當他低頭在玩，或是身體坐正，看到電視時頭仍是往患部垂下，總是會告訴他頭不要歪歪，且動手幫他扶起，但作用不大(快一歲了)，不過當他在爬行及扶著家具走動時就較為正常，像這樣的狀況~是否有什麼方便可協助他，或是只能等他長大再提醒他自己呢？</p>
+<p>&nbsp;</p></span></p>
+                    
+                  </div>
+                </div>
+      </div>
+    </div>
+  </body>
+</html>
