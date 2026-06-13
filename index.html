@@ -13,6 +13,7 @@
             --washi-bg: #F4F1EA;
             --text-main: #2D2D2D;
             --seal-red: #aa300b;
+            --link-blue: #006699;
         }
 
         body {
@@ -22,23 +23,38 @@
             background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png'); 
         }
 
+        /* 捲軸美化 */
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-thumb { background: #d1d1d1; border-radius: 10px; }
 
+        /* --- 核心修正：強制統一內文字體大小 --- */
+        .prose-content, 
+        .prose-content p, 
+        .prose-content span, 
+        .prose-content div, 
+        .prose-content font {
+            font-size: 1.15rem !important; /* 強制所有內文字體一致 */
+            line-height: 2 !important;     /* 強制行高一致 */
+            color: var(--text-main) !important; /* 強制顏色一致（除了連結） */
+        }
+
+        /* 排除圖片、連結與標題 */
+        .prose-content a, .prose-content a * {
+            color: var(--link-blue) !important;
+            text-decoration: underline !important;
+            font-size: 1.15rem !important;
+        }
+
         .prose-content img {
             max-width: 100%;
-            height: auto;
+            height: auto !important;
             margin: 2rem auto;
             border-radius: 2px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .prose-content p {
-            margin-bottom: 1.5rem;
-            line-height: 2;
-            letter-spacing: 0.03em;
-            font-size: 1.1rem;
+            display: block;
         }
 
+        /* 文章列表樣式 */
         .post-item {
             display: flex;
             justify-content: flex-start;
@@ -46,7 +62,6 @@
             white-space: nowrap;
             overflow: hidden;
         }
-        
         .post-title { overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; }
         .post-date-tag { font-family: monospace; font-size: 9px; margin-left: 8px; flex-shrink: 0; opacity: 0.5; }
 
@@ -55,44 +70,35 @@
             font-weight: bold !important;
             background-color: white !important;
         }
+        .active-post .post-date-tag { color: var(--seal-red); opacity: 0.8; }
 
         .category-header { cursor: pointer; user-select: none; }
-
         .post-container {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .post-container.expanded { max-height: 2000px; }
-
         .arrow { transition: transform 0.3s; display: inline-block; }
         .category-section.expanded .arrow { transform: rotate(90deg); }
 
-        /* 手機版側邊欄抽屜效果 */
+        /* 手機版樣式 */
         @media (max-width: 767px) {
             #sidebar {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 85%;
-                height: 100%;
-                z-index: 50;
-                transition: left 0.3s ease;
+                position: fixed; top: 0; left: -100%; width: 85%; height: 100%;
+                z-index: 50; transition: left 0.3s ease;
                 background-color: var(--washi-bg);
                 box-shadow: 10px 0 30px rgba(0,0,0,0.1);
             }
             #sidebar.open { left: 0; }
-            #overlay {
-                display: none;
-                position: fixed;
-                inset: 0;
-                background: rgba(0,0,0,0.3);
-                z-index: 40;
-            }
+            #overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 40; }
             #overlay.show { display: block; }
+            .prose-content, .prose-content p, .prose-content span, .prose-content div, .prose-content font {
+                font-size: 1.05rem !important; /* 手機版字稍微小一點點 */
+            }
         }
 
-        .fade-in { animation: fadeIn 0.5s ease-out forwards; }
+        .fade-in { animation: fadeIn 0.6s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
@@ -105,34 +111,24 @@
         <button onclick="toggleMenu()" class="p-2 text-stone-600 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
-        <h1 class="text-lg font-bold tracking-widest text-stone-800">孟乃欣的藝術空間</h1>
-        <div class="w-10"></div> <!-- 保持平衡 -->
+        <h1 class="text-lg font-bold tracking-widest text-stone-800">孟乃欣</h1>
+        <div class="w-10"></div>
     </header>
 
-    <!-- 手機版遮罩 -->
     <div id="overlay" onclick="toggleMenu()"></div>
 
     <div class="flex h-full relative">
-        
-        <!-- 左側：側邊欄 (手機版為抽屜) -->
+        <!-- 左側側邊欄 -->
         <aside id="sidebar" class="w-full md:w-72 lg:w-80 border-r border-stone-200 overflow-y-auto flex-shrink-0 flex flex-col">
             <div class="p-8 border-b border-stone-200 bg-white/20 hidden md:block">
-                <h1 class="text-2xl font-bold tracking-widest text-stone-800 border-b-4 border-stone-800 pb-3 mb-2">孟乃欣的藝術空間</h1>
-                <p class="text-[10px] text-stone-400 tracking-[0.2em] uppercase mt-1">數位存檔 · 分類索引</p>
+                <h1 class="text-2xl font-bold tracking-widest text-stone-800 border-b-4 border-stone-800 pb-3 mb-2">孟乃欣</h1>
+                <p class="text-[10px] text-stone-400 tracking-[0.2em] uppercase mt-1">數位存檔 · 索引</p>
             </div>
-            <!-- 手機版標題區 -->
-            <div class="p-6 border-b border-stone-200 md:hidden">
-                <p class="text-sm font-bold text-stone-800">文章分類</p>
-            </div>
-            
-            <nav id="post-list" class="flex-1 divide-y divide-stone-100">
-                <!-- 由 JS 生成 -->
-            </nav>
+            <nav id="post-list" class="flex-1 divide-y divide-stone-100"></nav>
         </aside>
 
-        <!-- 右側：內容區 -->
+        <!-- 右側內容區 -->
         <main class="flex-1 overflow-y-auto bg-white/10 shadow-inner" id="content-area">
-            
             <div id="welcome-message" class="h-full flex flex-col items-center justify-center p-10 text-stone-300">
                 <h2 class="text-xl font-light tracking-widest italic text-center">選取文章以開始閱讀</h2>
             </div>
@@ -143,9 +139,7 @@
                     <h2 id="view-title" class="text-2xl md:text-4xl font-bold text-stone-900 mb-4 leading-tight"></h2>
                     <time id="view-date" class="text-xs text-stone-400 font-light"></time>
                 </header>
-                
                 <div id="view-content" class="prose-content"></div>
-
                 <footer class="mt-32 pt-12 border-t border-stone-200 text-center text-stone-300 text-[10px] tracking-widest mb-20">
                     DIGITAL ARCHIVE REVIVAL &copy; 2024
                 </footer>
@@ -154,7 +148,7 @@
     </div>
 
     <script>
-        const blogData = window.blogData || [];
+        let blogData = window.blogData || [];
         const customOrder = ["書法", "The Beatles", "Mozart!", "費加洛婚禮", "Don Giovanni", "雜記"];
 
         function init() {
@@ -162,11 +156,12 @@
                 document.getElementById('post-list').innerHTML = '<div class="p-10 text-red-400 text-center text-sm">找不到資料</div>';
                 return;
             }
+            // 日期排序
+            blogData.sort((a, b) => new Date(b.date) - new Date(a.date));
             renderAccordionList();
             showArticle(0); 
         }
 
-        // 手機版選單切換
         function toggleMenu() {
             document.getElementById('sidebar').classList.toggle('open');
             document.getElementById('overlay').classList.toggle('show');
@@ -219,17 +214,18 @@
         }
 
         function handleCategoryClick(category) {
-            const isClosing = document.getElementById(`posts-${category}`).classList.contains('expanded');
+            const targetContainer = document.getElementById(`posts-${category}`);
+            const isClosing = targetContainer.classList.contains('expanded');
             document.querySelectorAll('.post-container').forEach(c => c.classList.remove('expanded'));
             document.querySelectorAll('.category-section').forEach(s => s.classList.remove('expanded'));
             if (!isClosing) {
-                document.getElementById(`posts-${category}`).classList.add('expanded');
+                targetContainer.classList.add('expanded');
                 document.getElementById(`cat-section-${category}`).classList.add('expanded');
             }
         }
 
-        function showArticle(index) {
-            const post = blogData[index];
+        function showArticle(originalIndex) {
+            const post = blogData.find((p, i) => i === originalIndex);
             if (!post) return;
 
             document.getElementById('welcome-message').classList.add('hidden');
@@ -246,9 +242,8 @@
 
             document.getElementById('content-area').scrollTo({ top: 0, behavior: 'smooth' });
 
-            // 更新選中視覺
             document.querySelectorAll('.post-item').forEach(el => el.classList.remove('active-post'));
-            const activeEl = document.getElementById(`post-item-${index}`);
+            const activeEl = document.getElementById(`post-item-${originalIndex}`);
             if (activeEl) {
                 activeEl.classList.add('active-post');
                 const category = post.category || "未分類";
@@ -257,7 +252,6 @@
                 }
             }
 
-            // 手機版自動關閉選單
             if (window.innerWidth < 768) {
                 document.getElementById('sidebar').classList.remove('open');
                 document.getElementById('overlay').classList.remove('show');
