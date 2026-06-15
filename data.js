@@ -1,15 +1,33 @@
 window.blogData = [
     {
-        "title": "張季明帖",
+        "title": "米芾 張季明帖",
         "date": "2021/07/27",
         "category": "書法",
         "content": "<p><p>張季明帖，米老的行書經典，我做了點苦工，在閑雅書法論壇貼了高解析度圖檔。</p><p><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=16650\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=16650</a></p><p>敬請欣賞！</p><p><img src=\"./images/word_extracted/張季明帖_img_1.jpeg\" /></p><p>張季明帖，東京國立博物館藏<br /><br />釋文<br />余收張季明帖。云：秋氣（衍字，點去）深，不審氣力復何如也，真行相間，長史世間第一帖也。其次&quot;賀八帖&quot;。余非合書。<br /><br />我收了張旭（張季明/張長史，唐朝以狂草留名於世的書家）的秋深帖（也許同時還包含一些其他的帖），帖裡寫的是「秋深，不審氣力復何如（秋深帖上寫的其實是如何兩字）也」。這帖楷書和行書相間，是張旭存世最好的作品。其次「賀八帖」。其餘的帖不很好。</p></p>"
     },
     {
-        "title": "平安 何如 奉橘 三帖",
+        "title": "北宋 蔡襄 入春帖",
+        "date": "2018/07/04",
+        "category": "書法",
+        "content": "<p><p>北京故宮博物院藏<br />圖檔畫質不算頂好。釋文：<br />襄啟，入春以來，屬少人便，不得馳書上問，唯深瞻想，日來氣候陰晴不齊，計安適否，貴屬亦平寧。襄舉室吉安，去冬大寒，出入感冒。（積）勞百病交攻，難可支持。雖入文字力求丐祠，今又蒙恩，復供舊職，恐知，專以為信。前者銅雀台瓦研，十三兄欲得之，可望寄與，旦夕別尋端石奉送也。正月十八日公琸仁弟足下。<br /><br />按此前往  閑雅臉書專頁 歷代名家書法作品 集錦（大圖檔）作品一覽表<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00</a><br />按此前往  書法欣賞主題選粹<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577</a></p><p><img src=\"./images/word_extracted/閒雅備份_北宋 蔡襄 入春帖_img_1.jpeg\" /></p></p>"
+    },
+    {
+        "title": "晉 王獻之 中秋帖",
+        "date": "2018/07/04",
+        "category": "書法",
+        "content": "<p><p><img src=\"./images/word_extracted/閒雅備份_晉 王獻之 中秋帖_img_1.jpeg\" /><br /><br /><br />按此前往  閑雅臉書專頁 歷代名家書法作品 集錦（大圖檔）作品一覽表<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00</a><br />按此前往  書法欣賞主題選粹<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577</a></p></p>"
+    },
+    {
+        "title": "王羲之 平安 何如 奉橘 三帖",
         "date": "2018/03/23",
         "category": "書法",
         "content": "<p><p>平安 何如 奉橘 三帖<br />晉 王羲之 雙鉤摹本 台北故宮博物院<br /><br />釋文<br />此粗平安 脩載來十餘日 諸人近集存 想明日當復悉來 無由同 增慨</p><p>羲之白 不審、尊體比復何如 遲復奉告 羲之中冷無賴 尋復白 羲之白</p><p>奉橘三百枚 霜未降 未可多得</p><p><img src=\"./images/word_extracted/img_211212_1.jpeg\" /></p></p>"
+    },
+    {
+        "title": "北宋 黃庭堅 花氣薰人帖",
+        "date": "2018/01/07",
+        "category": "書法",
+        "content": "<p><p>今年（107年）1月到3月25日，故宮「筆墨見真章」書法選粹展，展出<br />北宋 黃庭堅 花氣薰人帖<br />閑雅論壇好像之前也沒有貼過花氣薰人帖，我就先貼上個效果還可以的檔案。<br />釋文<br />花氣薰人欲破禪  心情其實過中年<br />春來詩思何所似  八節灘頭上水船<br /><br />按此前往  書法欣賞主題選粹<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=15500\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=15500</a></p><p><img src=\"./images/word_extracted/書法-北宋 黃庭堅 花氣薰人帖_img_1.jpeg\" /></p></p>"
     },
     {
         "title": "清 劉墉 入法界體性經",
@@ -24,10 +42,34 @@ window.blogData = [
         "content": "<p><p>今年（106年）10月到12月，故宮特展「國寶的形成—書畫菁華特展」<br />B檔期（11月15日到12月25日）領銜主演的是王羲之遠宦帖（唐代？榻摹本）。<br />閑雅論壇中之前也找不到此帖圖檔，我就先在此貼出。圖檔尺寸不小，解析度卻只是差強人意...<br />卷首隔水「王羲之遠宦帖」則是宋徽宗瘦金書<br /><br />釋文<br />省別具。足下小大問為慰。多分張。念足下懸情。武昌諸子亦多遠宦。足下兼懷。並數問不。老婦頃疾篤。救命。恆憂慮。餘粗平安。知足下情至。</p><p><img src=\"./images/word_extracted/王羲之 遠宦帖_img_1.jpeg\" /></p></p>"
     },
     {
+        "title": "王羲之 快雪時晴帖 大圖檔",
+        "date": "2017/07/22",
+        "category": "書法",
+        "content": "<p><p>今年（106年）10月到12月，故宮端出特展「國寶的形成—書畫菁華特展」<br />看看展品一覽，領銜主演的是<br />快雪時晴帖。此帖於A檔期（10月4日到11月14日）展出。<br />閑雅論壇好像一下子找不到快雪時晴帖的大圖檔，就先貼上個效果還可以的檔案。<br />（乾隆皇的字，我能裁掉的都裁掉了）<br />釋文<br />羲之頓首。快雪時晴。佳想安善。未果。為結。力不次。王羲之頓首。山陰張侯。<br /><img src=\"./images/word_extracted/書法-王羲之 快雪時晴帖 大圖檔_img_1.jpeg\" /></p><p>快雪時晴，是摹本？是臨本？有一說是，高度放大後，「為」「結」 兩字可看到雙鉤的墨線。<br />我能找到的最清晰圖檔，只有這個了，沒辦法驗證這個說法。<br /></p><p>還是別忘了點開圖檔放大再看喔！</p><p><img src=\"./images/word_extracted/書法-王羲之 快雪時晴帖 大圖檔_img_2.jpeg\" /></p></p>"
+    },
+    {
+        "title": "晉 王獻之 地黃湯帖",
+        "date": "2015/02/08",
+        "category": "書法",
+        "content": "<p><p>唐摹本 現藏日本東京台東區立書道博物館<br />釋文<br />新婦服地黃湯來，似減。眠食尚未佳。憂懸不去心。君等前所論事，想必及。謝生未還，可（何）爾。進退不可解，吾當書問也。<br /><br />按此可至  閑雅臉書專頁 歷代名家書法作品 集錦（大圖檔）作品一覽表<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00</a><br /><img src=\"./images/word_extracted/書法-晉 王獻之 地黃湯帖_img_1.jpeg\" /></p></p>"
+    },
+    {
+        "title": "北宋 蔡襄 澄心堂帖",
+        "date": "2014/07/13",
+        "category": "書法",
+        "content": "<p><p><br />附上圖檔尺寸不小，方便仔細觀察欣賞字口。精彩絕倫！</p><p>按此前往  閑雅臉書專頁 歷代名家書法作品 集錦（大圖檔）作品一覽表<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=10816&amp;start=00</a><br />按此前往  書法欣賞主題選粹<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=9577</a></p><p><img src=\"./images/word_extracted/閒雅備份_北宋 蔡襄 澄心堂帖_img_1.jpeg\" /></p></p>"
+    },
+    {
         "title": "費加洛playlist推薦",
         "date": "2013/03/25",
         "category": "費加洛婚禮",
         "content": "<p>想聽費加洛？先不用懂劇情，用這個Youtube playlist讓它自動播放</p><p><a href=\"https://www.youtube.com/watch?v=qgSPCWSAACs&list=PLA981B7082F1AEB31\" target=\"_blank\">https://www.youtube.com/watch?v=qgSPCWSAACs&list=PLA981B7082F1AEB31</a></p><p>（playlist中有三四首曲子不能播放倒是）</p><p>當背景音樂聽個幾天/幾遍後，會有些基本的熟悉，也會喜歡上裡頭的部分曲子。</p><p>這個時候再弄張DVD來看，看到複雜搞笑的劇情怎麼天衣無縫地搭配上不可思議的優美音樂，bingo，您就變成費加洛專家了！</p><p>順便看看，歌劇統計網站Operabase（<a href=\"http://operabase.com/top.cgi?lang=en）上的十大最受歡迎歌劇中，掛掉多少劇中人物：\" target=\"_blank\">http://operabase.com/top.cgi?lang=en）上的十大最受歡迎歌劇中，掛掉多少劇中人物：</a></p><p>第一名 威爾第 茶花女，全世界五年內演出629場。誰掛掉了：茶花女Violetta。誰是兇手：TB。</p><p>二、普契尼 波希米亞人，五年內580場。誰掛了：小手很冷的Mimi。兇手：大概又是TB。</p><p>三、比才 卡門，五年573場。誰掛了：卡門。兇手：妒火中燒的Don Jose。</p><p>四、莫札特 魔笛，五年571場。誰掛了：沒有人掛了。</p><p>五、普契尼 托斯卡，五年504場。誰掛了：托斯卡（自殺）、她男朋友Cavaradossi（處決）、警察頭目Scarpia（被托斯卡幹掉！），和政治犯Angelotti（自殺）。</p><p>六、莫札特 費加洛婚禮，五年494場。大家都活到謝幕。</p><p>七、普契尼 蝴蝶夫人，五年469場。誰掛了：蝴蝶夫人秋秋桑（自殺）</p><p>八、羅西尼 賽維亞的理髮師（費加洛是也！），五年465場。理髮而已，沒有血光之災。</p><p>九、威爾第 弄臣，五年434場。誰掛了：弄臣的漂亮女兒Gilda（自願替代曼都瓦公爵被殺手做掉掉...）</p><p>十、莫札特 唐喬凡尼，五年433場。誰掛了：老騎兵統領（被Don Giovanni一劍刺死）、Don Giovanni（被騎兵統領的鬼魂/雕像帶入地獄！）</p><p>這樣看起來，普契尼還真喜歡寫悲慘結局，至少在這個清單中，普契尼的女主角到最後全掛掉了！</p>"
+    },
+    {
+        "title": "米芾 褚摹蘭亭跋贊",
+        "date": "2012/03/25",
+        "category": "書法",
+        "content": "<p><p>米芾小字行書。<br />米老對自己的小字行書自視頗高：「吾書小字行書有如大字，唯家藏真跡跋尾間或有之，不以與求書者，心既貯之，隨意落筆，皆得自然」...<br />FB粉絲專頁相簿：<br /><a href=\"https://www.facebook.com/media/set/?set=a.368342163231729.84217.213023115430302&amp;type=1\" target=\"_blank\">https://www.facebook.com/media/set/?set=a.368342163231729.84217.213023115430302&amp;type=1</a><br /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_1.jpeg\" /></p><p>局部圖檔...</p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_2.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_3.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_4.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_5.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 褚摹蘭亭跋贊_img_6.jpeg\" /></p></p>"
     },
     {
         "title": "Leave My Kitten Alone",
@@ -130,6 +172,12 @@ window.blogData = [
         "date": "2010/05/22",
         "category": "The Beatles",
         "content": "<p>這回貼上高手用Beatles: Rock Band「表演」的，披頭最佳專輯唱片之一：Rubber Soul。<br>看著披頭四的「現場演唱實況」，可比光是聽CD有趣多了！<br>另外，看著bass，吉他和鼓的「譜」，<br>發現這些熟悉的曲子裡頭有那麼多從來不曾聽出來的細節。<br>而歌詞會在畫面上方跑動，非常方便用來熟悉歌詞...<br>總之，強烈推薦一首接著一首把它們欣賞完！</p>\n<p>Rock Band 的Rubber Soul預告片<br><a href=\"http://www.youtube.com/watch?v=gixfUK9MEfM\">http://www.youtube.com/watch?v=gixfUK9MEfM</a> <br>Rubber Soul (1965) 「滾石500大」第五名<br><a href=\"http://en.wikipedia.org/wiki/Rubber_Soul\">http://en.wikipedia.org/wiki/Rubber_Soul</a> <br><a href=\"http://www.allmusic.com/album/rubber-soul-r1515\">http://www.allmusic.com/album/rubber-soul-r1515</a> <br><a href=\"http://www.rollingstone.com/music/lists/500-greatest-albums-of-all-time-19691231/rubber-soul-the-beatles-19691231\">http://www.rollingstone.com/music/lists/500-greatest-albums-of-all-time-19691231/rubber-soul-the-beatles-19691231</a> <br>Rubber Soul是名曲如林的專輯，不過當年在英國似乎並未發行單曲唱片， <br>在美國也只出了Nowhere Man（拿到第三名） <br>所以專輯中沒有所謂冠軍單曲。 <br>曲子後頭的附註，格式是： <br>曲名，主唱，星星（我偏愛的程度，最多3顆星），其他說明 </p>\n<p>Drive My Car, Paul, ***, 披頭招牌歌之一 <br><a href=\"http://www.youtube.com/watch?v=q-c-6QNLgLc\">http://www.youtube.com/watch?v=q-c-6QNLgLc</a></p>\n<p>Norwegian Wood，John, ***, 披頭招牌歌之一，立即深深刻入腦海的不朽旋律。村上春樹小說「挪威的森林」書名的由來。西方流行音樂首次使用印度sitar琴，George彈的。 <br>滾石雜誌 史上最佳500歌曲The 500 Greatest Songs of All Time中排名第83 <br><a href=\"http://www.youtube.com/watch?v=O8By4rbsAc8\">http://www.youtube.com/watch?v=O8By4rbsAc8</a></p>\n<p>You Won&#39;t See Me, Paul, ** <br><a href=\"http://www.youtube.com/watch?v=VOE-WBf1FRs\">http://www.youtube.com/watch?v=VOE-WBf1FRs</a> </p>\n<p>Nowhere Man, John, ***, 披頭招牌歌之一，最早沒有涉及男女情愛的披頭歌 <br><a href=\"http://www.youtube.com/watch?v=uUJVHGvVzWk\">http://www.youtube.com/watch?v=uUJVHGvVzWk</a> </p>\n<p>Think for Yourself, George 唱自己寫的歌, * <br><a href=\"http://www.youtube.com/watch?v=qv3_JjhEZWI\">http://www.youtube.com/watch?v=qv3_JjhEZWI</a></p>\n<p>The Word, John, ** <br><a href=\"http://www.youtube.com/watch?v=s_r9c2fR9TM\">http://www.youtube.com/watch?v=s_r9c2fR9TM</a></p>\n<p>Michelle, Paul, ***, 披頭招牌歌之一，1966年葛萊美獎&quot;Song of the year&quot;。 <br><a href=\"http://www.youtube.com/watch?v=Ok-xfpIkmLw\">http://www.youtube.com/watch?v=Ok-xfpIkmLw</a></p>\n<p>在黑膠唱片的時代，也就是當年出版的時候，到了這裡得翻面。 </p>\n<p>B面： <br>What Goes On, John 和 Paul寫給Ringo唱的（Ringo也寫了一點歌詞啦）, *, <br>Ringo的歌喉是相當抱歉的，不過此曲倒是詮釋的頗佳。 <br><a href=\"http://www.youtube.com/watch?v=vjBqC9mmI-U\">http://www.youtube.com/watch?v=vjBqC9mmI-U</a></p>\n<p>Girl, John, ***, 披頭招牌歌之一，就是好聽 <br><a href=\"http://www.youtube.com/watch?v=xOgwQfsmGDY\">http://www.youtube.com/watch?v=xOgwQfsmGDY</a> </p>\n<p>I&#39;m Looking Through You, Paul, ** <br><a href=\"http://www.youtube.com/watch?v=oMkYJQAIBsc\">http://www.youtube.com/watch?v=oMkYJQAIBsc</a> </p>\n<p>In My Life, John, ***, 披頭招牌歌之一，2000年Mojo雜誌推舉此歌為史上最佳歌曲；滾石雜誌 史上最佳500歌曲The 500 Greatest Songs of All Time中排名第23 <br><a href=\"http://www.youtube.com/watch?v=gVRI5YswJN4\">http://www.youtube.com/watch?v=gVRI5YswJN4</a> </p>\n<p>Wait, John and Paul, * <br><a href=\"http://www.youtube.com/watch?v=ci5MA47XlRY\">http://www.youtube.com/watch?v=ci5MA47XlRY</a> </p>\n<p>If I Needed Someone, George, ** <br><a href=\"http://www.youtube.com/watch?v=NNoD08eYVRo\">http://www.youtube.com/watch?v=NNoD08eYVRo</a></p>\n<p>Run for Your Life, John, * <br><a href=\"http://www.youtube.com/watch?v=gGOLkGKK2fQ\">http://www.youtube.com/watch?v=gGOLkGKK2fQ</a> <br></p>"
+    },
+    {
+        "title": "米芾 方圓庵記",
+        "date": "2010/05/17",
+        "category": "書法",
+        "content": "<p><p>同塵爺在閑雅貼過<br /><a href=\"http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=3016\" target=\"_blank\">http://www.shianya.com/phpBB2/viewtopic.php?f=11&amp;t=3016</a><br />我曾跟貼了中華書畫出版社民國68年（1979）的版本。但是該版本印刷效果實在欠佳。<br /><br />現在貼出一個遠為清晰的版本，這應該和中華書畫出版社的帖子相同。<br />圖檔解析度：150dpi</p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_1.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_2.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_3.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_4.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_5.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_6.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_7.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_8.jpeg\" /></p><p><img src=\"./images/word_extracted/閒雅備份_米芾 方圓庵記_img_9.jpeg\" /></p></p>"
     },
     {
         "title": "狂歡通宵後遺症？談遲發性的肌肉酸痛",
