@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孟乃欣的書法空間 - 數位存檔復活版</title>
+    <title>孟乃欣的藝術空間 - 數位存檔復活版</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
@@ -23,26 +23,19 @@
             background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png'); 
         }
 
-        /* 捲軸美化 */
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-thumb { background: #d1d1d1; border-radius: 10px; }
 
-        /* --- 核心修正：強制統一內文字體大小 --- */
-        .prose-content, 
-        .prose-content p, 
-        .prose-content span, 
-        .prose-content div, 
-        .prose-content font {
-            font-size: 1.15rem !important; /* 強制所有內文字體一致 */
-            line-height: 2 !important;     /* 強制行高一致 */
-            color: var(--text-main) !important; /* 強制顏色一致（除了連結） */
+        /* 強制統一內文字體大小 */
+        .prose-content, .prose-content p, .prose-content span, .prose-content div, .prose-content font {
+            font-size: 1.15rem !important;
+            line-height: 2 !important;
+            color: var(--text-main) !important;
         }
 
-        /* 排除圖片、連結與標題 */
         .prose-content a, .prose-content a * {
             color: var(--link-blue) !important;
             text-decoration: underline !important;
-            font-size: 1.15rem !important;
         }
 
         .prose-content img {
@@ -54,30 +47,16 @@
             display: block;
         }
 
-        /* 文章列表樣式 */
-        .post-item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            white-space: nowrap;
-            overflow: hidden;
-        }
+        /* 列表樣式 */
+        .post-item { display: flex; justify-content: flex-start; align-items: baseline; white-space: nowrap; overflow: hidden; }
         .post-title { overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; }
         .post-date-tag { font-family: monospace; font-size: 9px; margin-left: 8px; flex-shrink: 0; opacity: 0.5; }
 
-        .active-post {
-            color: var(--seal-red) !important;
-            font-weight: bold !important;
-            background-color: white !important;
-        }
+        .active-post { color: var(--seal-red) !important; font-weight: bold !important; background-color: white !important; }
         .active-post .post-date-tag { color: var(--seal-red); opacity: 0.8; }
 
         .category-header { cursor: pointer; user-select: none; }
-        .post-container {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        .post-container { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .post-container.expanded { max-height: 2000px; }
         .arrow { transition: transform 0.3s; display: inline-block; }
         .category-section.expanded .arrow { transform: rotate(90deg); }
@@ -93,13 +72,25 @@
             #sidebar.open { left: 0; }
             #overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 40; }
             #overlay.show { display: block; }
-            .prose-content, .prose-content p, .prose-content span, .prose-content div, .prose-content font {
-                font-size: 1.05rem !important; /* 手機版字稍微小一點點 */
-            }
         }
 
         .fade-in { animation: fadeIn 0.6s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* 分享按鈕樣式 */
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.75rem;
+            color: #888;
+            border: 1px solid #ddd;
+            padding: 2px 8px;
+            border-radius: 99px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .share-btn:hover { background: #fff; color: var(--seal-red); border-color: var(--seal-red); }
     </style>
 </head>
 <body class="h-screen overflow-hidden flex flex-col">
@@ -109,9 +100,9 @@
     <!-- 手機版頂部欄 -->
     <header class="md:hidden flex justify-between items-center px-5 py-4 bg-white/60 border-b border-stone-200 z-30">
         <button onclick="toggleMenu()" class="p-2 text-stone-600 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </button>
-        <h1 class="text-lg font-bold tracking-widest text-stone-800">孟乃欣的書法空間</h1>
+        <h1 class="text-lg font-bold tracking-widest text-stone-800">孟乃欣</h1>
         <div class="w-10"></div>
     </header>
 
@@ -121,7 +112,7 @@
         <!-- 左側側邊欄 -->
         <aside id="sidebar" class="w-full md:w-72 lg:w-80 border-r border-stone-200 overflow-y-auto flex-shrink-0 flex flex-col">
             <div class="p-8 border-b border-stone-200 bg-white/20 hidden md:block">
-                <h1 class="text-2xl font-bold tracking-widest text-stone-800 border-b-4 border-stone-800 pb-3 mb-2">孟乃欣的書法空間</h1>
+                <h1 class="text-2xl font-bold tracking-widest text-stone-800 border-b-4 border-stone-800 pb-3 mb-2">孟乃欣</h1>
                 <p class="text-[10px] text-stone-400 tracking-[0.2em] uppercase mt-1">數位存檔 · 索引</p>
             </div>
             <nav id="post-list" class="flex-1 divide-y divide-stone-100"></nav>
@@ -135,9 +126,15 @@
 
             <article id="article-viewer" class="hidden max-w-4xl mx-auto px-6 py-10 md:px-12 lg:px-20">
                 <header class="mb-10 text-center">
-                    <span id="view-category" class="inline-block px-3 py-0.5 border border-stone-300 text-[10px] tracking-[0.3em] text-stone-400 uppercase mb-6"></span>
+                    <span id="view-category" class="inline-block px-3 py-0.5 border border-stone-300 text-[10px] tracking-[0.3em] text-stone-400 uppercase mb-4"></span>
                     <h2 id="view-title" class="text-2xl md:text-4xl font-bold text-stone-900 mb-4 leading-tight"></h2>
                     <time id="view-date" class="text-xs text-stone-400 font-light"></time>
+                    <br>
+                    <!-- 分享按鈕 -->
+                    <div onclick="copyCurrentLink()" class="share-btn">
+                        <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        複製文章連結
+                    </div>
                 </header>
                 <div id="view-content" class="prose-content"></div>
                 <footer class="mt-32 pt-12 border-t border-stone-200 text-center text-stone-300 text-[10px] tracking-widest mb-20">
@@ -156,10 +153,19 @@
                 document.getElementById('post-list').innerHTML = '<div class="p-10 text-red-400 text-center text-sm">找不到資料</div>';
                 return;
             }
-            // 日期排序
+            // 統一日期排序
             blogData.sort((a, b) => new Date(b.date) - new Date(a.date));
             renderAccordionList();
-            showArticle(0); 
+
+            // --- 關鍵：檢查網址是否有 Hash 指定文章 ---
+            const hash = decodeURIComponent(window.location.hash.substring(1));
+            const targetIndex = blogData.findIndex(p => p.title === hash);
+            
+            if (targetIndex !== -1) {
+                showArticle(targetIndex);
+            } else {
+                showArticle(0); // 預設打開最新一篇
+            }
         }
 
         function toggleMenu() {
@@ -177,10 +183,8 @@
             }, {});
 
             const sortedCategories = Object.keys(groups).sort((a, b) => {
-                let indexA = customOrder.indexOf(a);
-                let indexB = customOrder.indexOf(b);
-                if (indexA === -1) indexA = 999;
-                if (indexB === -1) indexB = 999;
+                let indexA = customOrder.indexOf(a); let indexB = customOrder.indexOf(b);
+                if (indexA === -1) indexA = 999; if (indexB === -1) indexB = 999;
                 return indexA - indexB || a.localeCompare(b);
             });
 
@@ -190,23 +194,17 @@
                     <div class="category-section" id="cat-section-${category}">
                         <div class="category-header flex justify-between items-center px-5 py-4 bg-stone-50/50" 
                              onclick="handleCategoryClick('${category}')">
-                            <span class="text-sm font-bold text-stone-600">
-                                <span class="arrow mr-1">▸</span> ${category}
-                            </span>
+                            <span class="text-sm font-bold text-stone-600"><span class="arrow mr-1">▸</span> ${category}</span>
                             <span class="text-[10px] text-stone-400 bg-white px-1.5 rounded-full border border-stone-200">${posts.length}</span>
                         </div>
                         <div id="posts-${category}" class="post-container">
-                            ${posts.map(post => {
-                                const shortDate = post.date.split(' ')[0];
-                                return `
-                                    <div onclick="showArticle(${post.originalIndex})" 
-                                         id="post-item-${post.originalIndex}"
-                                         class="post-item px-8 py-3 text-sm text-stone-500 hover:text-stone-900 hover:bg-white/80 cursor-pointer border-b border-stone-50/30">
-                                        <span class="post-title">${post.title}</span>
-                                        <span class="post-date-tag">${shortDate}</span>
-                                    </div>
-                                `;
-                            }).join('')}
+                            ${posts.map(post => `
+                                <div onclick="showArticle(${post.originalIndex})" id="post-item-${post.originalIndex}"
+                                     class="post-item px-8 py-3 text-sm text-stone-500 hover:text-stone-900 hover:bg-white/80 cursor-pointer border-b border-stone-50/30">
+                                    <span class="post-title">${post.title}</span>
+                                    <span class="post-date-tag">${post.date.split(' ')[0]}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 `;
@@ -224,8 +222,8 @@
             }
         }
 
-        function showArticle(originalIndex) {
-            const post = blogData.find((p, i) => i === originalIndex);
+        function showArticle(index) {
+            const post = blogData[index];
             if (!post) return;
 
             document.getElementById('welcome-message').classList.add('hidden');
@@ -236,6 +234,9 @@
             document.getElementById('view-category').innerText = post.category;
             document.getElementById('view-content').innerHTML = post.content;
 
+            // --- 關鍵：更新網址 Hash，方便使用者複製分享 ---
+            window.location.hash = encodeURIComponent(post.title);
+
             document.getElementById('article-viewer').classList.remove('fade-in');
             void document.getElementById('article-viewer').offsetWidth; 
             document.getElementById('article-viewer').classList.add('fade-in');
@@ -243,7 +244,7 @@
             document.getElementById('content-area').scrollTo({ top: 0, behavior: 'smooth' });
 
             document.querySelectorAll('.post-item').forEach(el => el.classList.remove('active-post'));
-            const activeEl = document.getElementById(`post-item-${originalIndex}`);
+            const activeEl = document.getElementById(`post-item-${index}`);
             if (activeEl) {
                 activeEl.classList.add('active-post');
                 const category = post.category || "未分類";
@@ -258,7 +259,22 @@
             }
         }
 
+        // 輔助功能：複製目前連結
+        function copyCurrentLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert("已複製文章連結到剪貼簿！");
+            });
+        }
+
         window.onload = init;
+        
+        // 監聽網址變化（使用者按瀏覽器上一頁/下一頁時）
+        window.onhashchange = function() {
+            const hash = decodeURIComponent(window.location.hash.substring(1));
+            const index = blogData.findIndex(p => p.title === hash);
+            if (index !== -1) showArticle(index);
+        };
     </script>
 </body>
 </html>
